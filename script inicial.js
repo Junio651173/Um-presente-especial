@@ -29,3 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(textoElemento);
 });
+
+// Contador de pensamentos
+let count = 0;
+const counterElement = document.getElementById("thought-counter");
+
+setInterval(() => {
+  count++;
+  counterElement.textContent = count.toLocaleString("pt-BR");
+}, 1300);
